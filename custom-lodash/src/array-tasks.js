@@ -30,7 +30,7 @@ function chunk(array, size = 1) {
  *    _.compact([0, 1, false, 2, '', 3]) => [1, 2, 3]
  */
 function compact(array) {
-  return array.map((a) => a);
+  return array.filter((a) => a);
 }
 
 function drop() {

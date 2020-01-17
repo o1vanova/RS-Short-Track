@@ -13,32 +13,33 @@ describe('array-tasks', () => {
     assert.equal(arr2[0], 'a,b,c');
   });
 
+  it.optional('compact test', () => {
+    const arr = tasks.compact([0, 1, false, 2, '', 3]);
+    assert.equal(arr, '1,2,3');
+  });
 
-});
+  it.optional('drop test', () => {
+  });
 
-describe('compact-tasks', () => {
-});
+  it.optional('dropWhile test', () => {
+  });
 
-describe('drop-tasks', () => {
-});
+  it.optional('take test', () => {
+  });
 
-describe('dropWhile-tasks', () => {
-});
+  it.optional('filter test', () => {
+  });
 
-describe('take-tasks', () => {
-});
+  it.optional('find test', () => {
+  });
 
-describe('filter-tasks', () => {
-});
+  it.optional('includes test', () => {
+  });
 
-describe('find-tasks', () => {
-});
+  it.optional('map test', () => {
+  });
 
-describe('includes-tasks', () => {
-});
+  it.optional('zip test', () => {
+  });
 
-describe('map-tasks', () => {
-});
-
-describe('zip-tasks', () => {
 });

@@ -2,20 +2,24 @@ const assert = require('assert');
 const tasks = require('../src/object-tasks');
 it.optional = require('../extensions/it-optional');
 
-describe('merge-tasks', () => {
-});
 
-describe('omit-tasks', () => {
-});
+describe('array-tasks', () => {
+  it.optional('merge test', () => {
+  });
 
-describe('omitBy-tasks', () => {
-});
+  it.optional('omit test', () => {
+  });
 
-describe('pick-tasks', () => {
-});
+  it.optional('omitBy test', () => {
+  });
 
-describe('pickBy-tasks', () => {
-});
+  it.optional('pick test', () => {
+  });
 
-describe('toPairs-tasks', () => {
+  it.optional('pickBy test', () => {
+  });
+
+  it.optional('toPairs test', () => {
+  });
+
 });
