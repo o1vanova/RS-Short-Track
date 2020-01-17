@@ -19,6 +19,53 @@ function chunk(array, size = 1) {
   return result;
 }
 
+/**
+ * Creates an array with all falsey values removed.
+ * The values false, null, 0, "", undefined, and NaN are falsey.
+ *
+ * @param {array} array The array to compact.
+ * @return {array} Returns the new array of filtered values.
+ *
+ * @example
+ *    _.compact([0, 1, false, 2, '', 3]) => [1, 2, 3]
+ */
+function compact(array) {
+  return array.map((a) => a);
+}
+
+function drop() {
+}
+
+function dropWhile() {
+}
+
+function take() {
+}
+
+function filter() {
+}
+
+function find() {
+}
+
+function includes() {
+}
+
+function map() {
+}
+
+function zip() {
+}
+
 module.exports = {
   chunk,
+  compact,
+  drop,
+  dropWhile,
+  take,
+  filter,
+  find,
+  includes,
+  map,
+  zip,
 };
