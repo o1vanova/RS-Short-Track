@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Custom Lodash",
   "scripts": {
-    "test": "npm run lint && mocha",
-    "lint": "eslint ./src"
+    "test": "npm run lint && mocha --colors",
+    "lint": "eslint ./src --fix"
   },
   "author": "Olga Ivanova",
   "license": "MIT",

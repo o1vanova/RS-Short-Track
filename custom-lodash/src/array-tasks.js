@@ -10,6 +10,15 @@
  *    _.chunk(['a', 'b', 'c', 'd'], 2) => [['a', 'b'], ['c', 'd']]
  *    _.chunk(['a', 'b', 'c', 'd'], 3) => [['a', 'b', 'c'], ['d']]
  */
-function chunk(array, [size = 1]) {
-  return array;
+function chunk(array, size = 1) {
+  const result = [];
+  for (let i = 0; i < array.length; i += size) {
+    const res = array.slice(i, i + size);
+    result.push(res);
+  }
+  return result;
 }
+
+module.exports = {
+  chunk,
+};
