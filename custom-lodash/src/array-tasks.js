@@ -33,7 +33,21 @@ function compact(array) {
   return array.filter((a) => a);
 }
 
-function drop() {
+/**
+ * Creates a slice of array with n elements dropped from the beginning.
+ *
+ * @param {array} array The array to query.
+ * @param {n} number The number of elements to drop.
+ * @returns {array} Returns the slice of array.
+ *
+ * @example
+ *    _.drop([1, 2, 3]) => [2, 3]
+ *    _.drop([1, 2, 3], 2) => [3]
+ *    _.drop([1, 2, 3], 5) => []
+ *    _.drop([1, 2, 3], 0) => [1, 2, 3]
+ */
+function drop(array, n = 1) {
+  return array.splice(n);
 }
 
 function dropWhile() {

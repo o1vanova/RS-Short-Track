@@ -19,6 +19,10 @@ describe('array-tasks', () => {
   });
 
   it.optional('drop test', () => {
+    assert.equal(tasks.drop([1, 2, 3]), '2,3');
+    assert.equal(tasks.drop([1, 2, 3], 2), '3');
+    assert.equal(tasks.drop([1, 2, 3], 5), '');
+    assert.equal(tasks.drop([1, 2, 3], 0), '1,2,3');
   });
 
   it.optional('dropWhile test', () => {
