@@ -1,6 +1,6 @@
 # Rolling Scopes Short Track
 
-## Task's desctiption is located [here](https://github.com/rolling-scopes-school/RS-Short-Track/wiki).
+## Task's description is located [here](https://github.com/rolling-scopes-school/RS-Short-Track/wiki).
 
 This task is to implement 'custom' version of the lodash library following next requirements:
 
