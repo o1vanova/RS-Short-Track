@@ -53,7 +53,21 @@ function drop(array, n = 1) {
 function dropWhile() {
 }
 
-function take() {
+/**
+ * Creates a slice of array with n elements taken from the beginning.
+ *
+ * @param {array} array The array to query.
+ * @param {n} number The number of elements to take.
+ * @returns {array} Returns the slice of array.
+ *
+ * @example
+ *    _.take([1, 2, 3]) => [1]
+ *    _.take([1, 2, 3], 2) => [1, 2]
+ *    _.take([1, 2, 3], 5) => [1, 2, 3]
+ *    _.take([1, 2, 3], 0) => []
+ */
+function take(array, n = 1) {
+  return array.slice(0, n);
 }
 
 function filter() {
