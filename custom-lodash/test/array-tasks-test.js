@@ -132,7 +132,7 @@ describe('array-tasks', () => {
   it.optional('zip test', () => {
     const result = _.zip(['a', 'b'], [1, 2], [true, false]);
     assert.equal(result[0], 'a,1,true');
-    assert.equal(result[1], 'b,2,true');
+    assert.equal(result[1], 'b,2,false');
   });
 
 });
