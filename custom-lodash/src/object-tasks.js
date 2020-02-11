@@ -34,6 +34,10 @@ function isNumber(value) {
   return typeof value === 'number';
 }
 
+function get(obj, format) {
+  return format.split('.').reduce((prev, value) => prev && prev[value], obj);
+}
+
 module.exports = {
   merge,
   omit,
@@ -42,4 +46,5 @@ module.exports = {
   pickBy,
   toPairs,
   isNumber,
+  get,
 };

@@ -73,4 +73,10 @@ describe('array-tasks', () => {
     assert.equal(_.isNumber('3'), false);
   });
 
+  it.optional('get tests', () => {
+    assert.equal(_.get({ a: { b: 1 } }, 'a.b'), 1);
+    assert.equal(_.get({ a: { b: 1 } }, 'a.c'), undefined);
+    assert.equal(_.get({ }, 'a.c'), undefined);
+  });
+
 });
